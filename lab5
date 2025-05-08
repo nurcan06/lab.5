@@ -1,0 +1,11 @@
+import random
+n = 10 
+B = [random.randint(1, 100) for _ in range(n)]
+print(B)
+tek_indeksliler = [B[i] for i in range(1, n, 2)]
+if tek_indeksliler:
+    ededi_orta = sum(tek_indeksliler) / len(tek_indeksliler)
+    print("Tək indeksli elementlər:", tek_indeksliler)
+    print("Ədədi orta:", ededi_orta)
+else:
+    print("Tək indeksli element yoxdur.")
